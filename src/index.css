@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Sidebar Styles */
+.sidebar-container {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-container .btn-link {
+  color: #ecf0f1 !important;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 2px 0;
+}
+
+.sidebar-container .btn-link:hover {
+  background-color: #10b981 !important;
+  color: white !important;
+  transform: translateX(5px);
+}
+
+.sidebar-container .btn-link.active {
+  background-color: #10b981 !important;
+  color: white !important;
+}
+
+.sidebar-container li.active .btn-link {
+  background-color: #10b981 !important;
+  color: white !important;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* User profile styling */
+.user-profile {
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+/* Menu button styling */
+.menu-toggle-btn {
+  background: linear-gradient(45deg, #10b981, #059669) !important;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+/* Logo Styling */
+.clinic-logo-main {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(45deg, #2c3e50, #34495e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.clinic-logo-sub {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #10b981;
+  text-transform: uppercase;
+}
+
+.clinic-logo-accent {
+  background: linear-gradient(90deg, #10b981, #059669);
+  height: 3px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+/* Login Page Animations */
+@keyframes gentleShift {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.01;
+  }
+  50% {
+    transform: translateX(5px) translateY(3px);
+    opacity: 0.03;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar-container.show {
+    left: 0;
+  }
+  
+  .clinic-logo-main {
+    font-size: 32px !important;
+  }
+  
+  .clinic-logo-sub {
+    font-size: 12px !important;
+  }
+}

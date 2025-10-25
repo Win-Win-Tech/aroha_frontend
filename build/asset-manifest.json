@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.faa80961.css",
+    "main.js": "/static/js/main.d7c0024f.js",
+    "static/js/952.6f906a6d.chunk.js": "/static/js/952.6f906a6d.chunk.js",
+    "static/js/500.91d109b8.chunk.js": "/static/js/500.91d109b8.chunk.js",
+    "static/media/medical-background.svg": "/static/media/medical-background.31a28b320453e3411857bd2ef2df8cd8.svg",
+    "static/media/medical-profile.svg": "/static/media/medical-profile.4ed4b22a4080cff9037c4b1bac4ef50d.svg",
+    "static/media/medical-logo.svg": "/static/media/medical-logo.91db158778b1df0a8141dbf6100d5ddf.svg",
+    "index.html": "/index.html",
+    "main.faa80961.css.map": "/static/css/main.faa80961.css.map",
+    "main.d7c0024f.js.map": "/static/js/main.d7c0024f.js.map",
+    "952.6f906a6d.chunk.js.map": "/static/js/952.6f906a6d.chunk.js.map",
+    "500.91d109b8.chunk.js.map": "/static/js/500.91d109b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.faa80961.css",
+    "static/js/main.d7c0024f.js"
+  ]
+}

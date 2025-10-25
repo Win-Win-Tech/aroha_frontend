@@ -1,0 +1,29 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Inner gradient -->
+    <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f0fdf4;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="96" fill="url(#logoGradient)"/>
+  
+  <!-- Medical cross -->
+  <rect x="72" y="36" width="48" height="120" fill="url(#innerGradient)" rx="12"/>
+  <rect x="36" y="72" width="120" height="48" fill="url(#innerGradient)" rx="12"/>
+  
+  <!-- Inner cross for depth -->
+  <rect x="78" y="42" width="36" height="108" fill="#10b981" opacity="0.3" rx="6"/>
+  <rect x="42" y="78" width="108" height="36" fill="#10b981" opacity="0.3" rx="6"/>
+  
+  <!-- Center highlight -->
+  <circle cx="96" cy="96" r="18" fill="#ffffff" opacity="0.8"/>
+</svg>
